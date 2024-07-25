@@ -1,14 +1,7 @@
-# krtopi
+# sarina
 
-Social Media platform similar to BeReal. Users are asked to upload a photo on a set interval that matches one of the several prompts.
+Social Media platform similar to BeReal. Users are given prompts and a timeframe to complete the prompt. A prompt is completed when a video or photo is uploaded of you doing the prompt. Your friends must vote to verify whether or not you have completed the prompt. Once the votes are in, you will recieve stars, which allow  you to purchase packs for a chance at a wide assortment of collectible, virtual stickers.
 
-## Project Goals
-
-1) Create a social media platform
-
-2) Create a sticker collection system
-
-3) Create a stock market for trading and exchanging stickers.
 
 
 
