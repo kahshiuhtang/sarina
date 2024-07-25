@@ -1,0 +1,32 @@
+---
+services:
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=krtopi
+      - MONGO_INITDB_ROOT_PASSWORD=krtopi
+    ports:
+    - "27017:27017"
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: 'krtopi'
+      MYSQL_USER: 'krtopi'
+      MYSQL_PASSWORD: 'krtopi'
+      MYSQL_ROOT_PASSWORD: 'krtopi'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3306'
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra-container
+    ports:
+      - "9142:9142"
+    environment:
+      - CASSANDRA_USER=krtopi
+      - CASSANDRA_PASSWORD=krtopi
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+volumes:
+  cassandra-data:
